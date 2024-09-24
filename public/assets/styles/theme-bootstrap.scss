@@ -1,0 +1,26 @@
+// 1. Import Bootstrap functions and variables first
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+// 2. Define custom colors
+$primary: #673ab7;
+$primary-gray: rgba(194, 180, 219, 0.3);
+$secondary: $yellow-300;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: #a1a0a3;
+$dark: $gray-900;
+$gray: gray;
+$gray-500: rgba(0, 0, 0, 0.04);
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);

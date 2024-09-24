@@ -1,0 +1,58 @@
+<mat-form-field
+  appearance="outline"
+  class="d-flex pt-2"
+  [ngClass]="{ 'readonly-field': isReadOnly }"
+>
+  @if(prefix){
+  <mat-icon matPrefix>{{ prefix }}</mat-icon>
+  }
+  <mat-label class="text-danger">
+    {{ label }}
+  </mat-label>
+  <input
+    matInput
+    [placeholder]="placeholder"
+    [type]="type === 'password' ? (!show ? 'password' : 'text') : type"
+    [formControl]="controlF"
+    [errorStateMatcher]="matcher"
+    [attr.data-testid]="dataTestId"
+    [readonly]="isReadOnly"
+    (ngModelChange)="inputChange($event)"
+    (click)="inputClick($event)"
+  />
+
+  @if(suffix){
+  <mat-icon matSuffix class="suffix-text">{{ suffix }}</mat-icon>
+  } @if (type === 'password'){
+  <img
+    [ngClass]="{ 'en-pass-icon': isEnglish, 'ar-pass-icon': !isEnglish }"
+    [src]="
+      !show
+        ? '../../../../../assets/img/eye.svg'
+        : '../../../../../assets/img/closed_eye.svg'
+    "
+    (click)="togglePasswordVisibility()"
+  />
+  <!-- (cerrorState(control, formState(control, form="show = !show"))) -->
+
+  }
+
+  <mat-error>
+    <input-error
+      [control]="controlF"
+      [label]="label"
+      [min]="min"
+      [max]="max"
+      [minLength]="minLength"
+      [maxLength]="maxLength"
+      [startsWith]="startsWith"
+    />
+  </mat-error>
+</mat-form-field>
+
+@if (controlF.touched && isValidCode(imageCode)) {
+<mat-error style="margin-top: -26px; margin-bottom: 7px; font-size: 12px">
+  {{ 'signup.The code is in the picture' | translate }}
+  {{ 'valdation.incorrect' | translate }}
+</mat-error>
+}

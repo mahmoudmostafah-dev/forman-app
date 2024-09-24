@@ -1,0 +1,50 @@
+@if (shouldShowError()) {
+<span>
+  @switch (true) { @case (control.hasError('email')) {
+  {{ 'shared.emailValid' | translate }}
+  } @case (control.hasError('required')) {
+  {{ label }} <strong>{{ 'shared.required' | translate }}</strong>
+  } @case (control.hasError('min')) {
+  {{ label }}
+  <strong>{{ 'shared.greaterThan' | translate }} {{ ' ' + min }}</strong>
+  } @case (control.hasError('max')) {
+  {{ label }}
+  <strong>{{ 'shared.lowerThan' | translate }} {{ ' ' + max }}</strong>
+  } @case (control.hasError('minlength')) {
+
+  {{ 'shared.minLength' | translate }}
+  <strong>{{ minLength }}&nbsp;</strong>
+
+  <strong>{{ 'shared.characters' | translate }}</strong>
+  } @case (control.hasError('maxlength')) {
+  {{ 'shared.maxLength' | translate }}
+  <strong>{{ maxLength }}&nbsp;</strong>
+  <strong>{{ 'shared.characters' | translate }}</strong>
+
+  } @case (control.hasError('invalidStartsWith')) {
+  {{ label + ' ' }}
+  {{ 'shared.startsWith' | translate }}
+  <strong>{{ startsWith }}</strong>
+  } @case (control.hasError('pattern') && label === ('personalInfo.MobileNumber'
+  | translate)) {
+  <strong>{{ 'shared.onlyNumber' | translate }}</strong>
+  } @case (control.hasError('pattern')) {
+  {{ label }}
+  <strong
+    >{{ 'shared.characters' | translate }}
+    {{ 'shared.only' | translate }}</strong
+  >
+  } @case (control.hasError('capital_small')) {
+  {{ label }}
+  <strong>{{ 'shared.capital_small' | translate }}</strong>
+  } @case (control.hasError('oneNumber')) {
+  {{ label }}
+  <strong>{{ 'shared.oneNumber' | translate }}</strong>
+  } @case (control.hasError('SpecialChar')) {
+  {{ label }}
+  <strong>{{ 'shared.SpecialChar' | translate }}</strong>
+  } @default {
+  <strong>{{ error | translate }}</strong>
+  } }
+</span>
+}
