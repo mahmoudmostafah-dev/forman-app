@@ -1,0 +1,81 @@
+@if (isDataLoaded) {
+<div class="grid-container" [style.grid-template-columns]="gridTemplateColumns">
+  @for (item of gridContents; track item; let i = $index) {
+  <div
+    [ngClass]="{ 'grid-item-start': isSmall, 'grid-item': !isSmall }"
+    [style.grid-column]="getGridColumn(item)"
+  >
+    @if (item.full && !item.center ) {
+
+    <div class="row">
+      <ng-container *ngTemplateOutlet="item.template"></ng-container>
+    </div>
+
+    }@else if(item.full && item.center){
+
+    <div class="d-flex justify-content-center align-items-center">
+      <ng-container *ngTemplateOutlet="item.template"></ng-container>
+    </div>
+
+    }@else if(!item.full && item.center){
+
+    <div class="d-flex justify-content-center align-items-center">
+      <ng-container *ngTemplateOutlet="item.template"></ng-container>
+    </div>
+
+    } @else {
+    <ng-container *ngTemplateOutlet="item.template"></ng-container>
+
+    }
+  </div>
+  }
+</div>
+}
+
+<!-- <shared-grid >
+    <ng-template gridTile="0">
+    <div class="container">
+      <input-field
+        [label]="'agreement.agreementName' | translate"
+        [type]="'text'"
+        [placeholder]="'agreement.agreementName' | translate"
+        [controlF]="getFormGroup('agreementName')"
+        [dataTestId]="'agreementName'"
+      />
+    </div>
+  </ng-template>
+
+
+    <ng-template gridTile="0">
+    <div class="container">
+      <app-shared-ckeditor
+        [label]="'agreement.agreementDescription' | translate"
+        [placehoder]="'agreement.agreementDescription' | translate"
+        [controlF]="getFormGroup('agreementDescription')"
+        [maxLength]="500"
+        [dataTestId]="'agreementDescription'"
+      >
+      </app-shared-ckeditor>
+    </div>
+  </ng-template>
+
+    <ng-template gridTile>
+    <cancel-button
+      class="px-3"
+      [label]="'shared.cancel' | translate"
+      (buttonClick)="submitForm()"
+      [dataTestId]="'cancel'"
+    >
+    </cancel-button>
+  </ng-template>
+
+    <ng-template gridTile>
+    <app-shared-button
+      class="d-flex justify-content-end px-3"
+      [label]="'shared.saveAndContinue' | translate"
+      (buttonClick)="submitForm()"
+      [dataTestId]="'continue'"
+    >
+    </app-shared-button>
+  </ng-template>
+</shared-grid> -->

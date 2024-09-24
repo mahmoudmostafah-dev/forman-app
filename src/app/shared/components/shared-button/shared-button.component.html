@@ -1,0 +1,45 @@
+@if (isLink) {
+<button
+  mat-button
+  [color]="color"
+  (click)="handleClick()"
+  [title]="title"
+  [disabled]="isDisabled"
+  type="button"
+  [attr.data-testid]="dataTestId"
+  style="text-decoration: underline"
+>
+  @if (!showSpinner) {
+  {{ label }}
+  } @else {
+  <mat-spinner
+    mode="indeterminate"
+    [diameter]="40"
+    color="accent"
+  ></mat-spinner>
+  }
+</button>
+} @else {
+<button
+  (click)="handleClick()"
+  [title]="title"
+  [disabled]="isDisabled"
+  [attr.data-testid]="dataTestId"
+  [class]="className"
+>
+  @if (!showSpinner) {
+  {{ label }}
+
+  @if (icon){
+
+  <mat-icon [class]="iconClass">{{ icon }}</mat-icon>
+
+  } } @else {
+  <mat-spinner
+    mode="indeterminate"
+    [diameter]="40"
+    color="accent"
+  ></mat-spinner>
+  }
+</button>
+}

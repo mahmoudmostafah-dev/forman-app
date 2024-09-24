@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  gap: 13px;
+  margin-top: 0.5rem;
+}
+
+.grid-item {
+  min-width: 0;
+  height: fit-content;
+}
+
+.grid-item-start {
+  display: flex;
+  min-width: 0;
+  height: fit-content;
+  justify-content: flex-start;
+}
