@@ -1,0 +1,155 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+.calculator{
+  gap:1rem;
+  padding: 40px;
+
+
+}
+.calculator-img{
+ //left:10px ;
+ right: 50px;
+  position: relative;
+  width: 300px; /* العرض المناسب */
+  height: 300px; /* الطول المناسب */
+}
+
+.calculator-img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* ملء الحاوية */
+  height: 100%; /* ملء الحاوية */
+ // opacity: 0.7; /* تغيير الشفافية حسب الحاجة */
+height: 400px;
+transition: 0.5s ease;
+}
+.calculator-img .img1{
+
+  opacity: 0.8;
+}
+.calculator-img .img2{
+
+}
+.calculator-img .img3{
+
+}
+.calculator-img img:hover{
+  transform: scale(1.02);
+ // border: 2px solid blueviolet;
+}
+.text-style {
+  font-family: "Poppins", sans-serif;
+  // font-weight: bold;
+  font-size: 16px;
+  color: #040404;
+
+}
+.text-style h1 {
+  //font-weight: bold;
+  font-stretch: condensed;
+  font-size: 96px;
+  font-weight: 1000;
+  color: #0f0f0f;
+  letter-spacing: -4;
+  //margin-top: 10px;
+}
+
+.text-style h3 {
+ margin-top: -40px;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #070707;
+}
+.text-style p {
+  margin-bottom: 15px;
+  width: 450px;
+
+color: #808080
+}
+
+// .text-style .button {
+//   width: 100px;
+//   background: #FE12AC;
+//   color: #fff;
+
+
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }
+
+// .text-style .button:hover {
+//    background: #af0c76;
+
+// }
+.button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ff1493; /* Pink background */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px;
+  color: white; /* White text */
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button a{
+  text-decoration: none;
+  color: #fff9f9;
+}
+
+.button img {
+  margin-left: 10px; /* Space between text and arrow */
+}
+
+.button:hover {
+
+  background-color:   #ff69b4; /* Darker pink on hover */
+}
+
+ //__
+.text-style .highlight {
+  background-color: #ffeb3b;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// .heading{
+//   text-align: center;
+//   font-size: 4.5rem;
+// }
+// .calculator-conent{
+//   padding: 0 3rem;
+// }
+// .calculator-conent h1{
+//   text-align: left;
+
+// }
+// .calculator-conent p{
+// font-size: 1.6rem;
+// margin: 2rem 0 2rem;
+// }
+// .button-hover {
+//   background-color: #f9417e;
+//   border: none;
+//   color: white;
+//   padding: 12px 26px;
+//  border-radius: 20px;
+//   text-decoration: none;
+//   // display: inline-block;
+//   font-size: 16px;
+//   margin: 4px 2px;
+//   cursor: pointer;
+//   transition-duration: 0.4s;
+// }
+
+// .button-hover:hover {
+//   background-color: white;
+//   color: black;
+//   border: 2px solid #dc2379;
+// }

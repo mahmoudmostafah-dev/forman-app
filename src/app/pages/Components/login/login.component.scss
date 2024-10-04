@@ -1,0 +1,100 @@
+.bg-holder
+{
+  width: 500px;
+  position:relative ;
+  min-height:100% ;
+  top:0 ;
+  left:0 ;
+  //bottom: 10px;
+  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-holder img{
+width: 600px;
+}
+.test1{
+
+margin-bottom: 0px;
+
+}
+.test2{
+margin-top: -40px;
+margin-bottom: 10px;
+}
+.btn button{
+  width: Fixed (95px)px;
+height: Hug (37px)px;
+//padding: 10px 24px 8px 24px;
+padding: 14px 24px;
+gap: 9.14px;
+//border-radius: 58px ;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+
+
+}
+.test2 .btn1{
+  padding: 6px 24px;
+color: aliceblue;
+  border: 1px solid #FE12AC;
+  border-radius: 50px;
+  background : #FE12AC;
+
+}
+.test2 .btn2{
+  background: #FE12AC03;
+  border: 1px solid #FE12AC;
+  border-radius: 50px;
+  padding: 6px 24px;
+  color: #FE12AC;
+
+
+}
+ a{
+  font-family: Inter;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20.11px;
+  text-align: left;
+
+  color: #FE12AC;
+
+}
+.continue{
+  margin-top: 20px
+}
+.continue button{
+  position: relative;
+  border: none;
+  left: 15px;
+  width: Fill (345px)px;
+height: Fixed (50px)px;
+//padding: 14.63px 200px 14.63px 10px;
+padding: 20px 150px;
+gap: 9.14px;
+border-radius: 8px ;
+opacity: 0px;
+background: #FE12AC;
+color: white;
+
+}
+.continue button span{
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.end .Register{
+  left: -10px;
+}
+.foot{
+  font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.52px;
+text-align: center;
+
+}

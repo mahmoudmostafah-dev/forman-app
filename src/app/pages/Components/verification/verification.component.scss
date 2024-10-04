@@ -1,0 +1,81 @@
+
+.bg-holder
+{
+  width: 700px;
+height: 728px;
+top: 20px;
+left: 20px;
+
+border-radius: 32px ;
+
+background: #FFFFFF;
+
+}
+.bg-holder img{
+width: 600px;
+}
+.header h2{
+  width: 320px;
+height: 36px;
+font-family: Poppins;
+font-size: 24px;
+font-weight: 800;
+line-height: 36px;
+text-align: center;
+
+}
+.otp-cards-inputs {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.otp-cards-inputs input{
+  width:  60px;
+  height:  60px;
+  padding: 16px 0px ;
+  gap: 10px;
+  border-radius: 8px ;
+  border: 1px;
+  background: #FFFFFF;
+  border: 1px solid #00000033
+
+}
+.Done button{
+  margin-top: 20px;
+  position: relative;
+  border: none;
+  left: 15px;
+  width: Fill (345px)px;
+height: Fixed (50px)px;
+//padding: 14.63px 200px 14.63px 10px;
+padding: 20px 150px;
+gap: 9.14px;
+border-radius: 8px ;
+opacity: 0px;
+background: #FE12AC;
+color: white;
+
+}
+.Resendpassword a{
+  width: 135px;
+  height: 21px;
+  font-family: Inter;
+font-size: 16px;
+font-weight: 800;
+line-height: 20.11px;
+text-align: left;
+color: #FE12AC;
+text-decoration: none;
+
+
+}
+.foot{
+  margin-top: 10px;
+  font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.52px;
+text-align: center;
+
+}
