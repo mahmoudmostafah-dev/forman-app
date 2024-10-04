@@ -1,0 +1,34 @@
+.social {
+  margin-top: 105.88px;
+  margin-bottom: 70px;
+}
+
+.social > img {
+  width: 126.3px;
+  height: 101.38px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+}
+
+.links {
+  gap: 40px;
+}
+
+@media (max-width: 767px) {
+  .social>img {
+    width: 101.04px;
+    height: 81.1px;
+  }
+
+  .title {
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+  }
+}

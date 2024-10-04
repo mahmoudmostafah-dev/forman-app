@@ -1,0 +1,96 @@
+.programs {
+  padding: 120px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 56.25px;
+  letter-spacing: -0.04em;
+}
+
+.main-title span {
+  color: #FF5400;
+}
+
+.card {
+  border-radius: 27.56px;
+  height: 449px;
+}
+
+.card-body {
+  background: linear-gradient(to bottom, rgba(35, 28, 27, 0) 0%, #0D0D0D 22.44%);
+  width: 100%;
+}
+
+.card-title {
+  color: #FFFFFF;
+}
+
+.card-title .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 30.4px;
+  letter-spacing: -0.07em;
+  width: 194.98px;
+  z-index: 1;
+}
+
+.card-title .title img {
+  top: -39px;
+  left: -22px;
+  z-index: -1;
+}
+
+.card-title .time {
+  gap: 6.89px;
+}
+
+.card-title .time span {
+  font-family: "Poppins", sans-serif;
+  font-size: 10.34px;
+  font-weight: 600;
+  line-height: 15.51px;
+}
+
+.card-buttons a {
+  display: inline-flex;
+  font-family: "Inter", sans-serif;
+  font-size: 12.13px;
+  font-weight: 700;
+  line-height: 15.25px;
+  gap: 6.93px;
+  color: #FFFFFF;
+  width: fit-content;
+  padding: 10.99px 18.19px;
+}
+
+.card-buttons .btn {
+  background-color: #FE12AC;
+  margin-right: 13.78px;
+}
+
+.card-buttons a img {
+  width: 15.16px;
+  height: 15.16px;
+}
+
+.container>.btn {
+  width: fit-content;
+  border: 1.34px solid #FE12AC;
+  color: #FE12AC;
+  padding: 14.5px 24px;
+  gap: 9.14px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.11px;
+}

@@ -1,12 +1,17 @@
 import {
   ApplicationConfig,
   importProvidersFrom,
-  provideZoneChangeDetection,
+  provideZoneChangeDetection
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { HttpClient } from '@angular/common/http';
+import {
+  HttpClient,
+  provideHttpClient,
+  withFetch,
+  withInterceptors
+} from '@angular/common/http';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -21,14 +26,15 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(),
     provideAnimationsAsync(),
+    provideHttpClient(withFetch(), withInterceptors([])),
     importProvidersFrom(
       TranslateModule.forRoot({
         loader: {
           provide: TranslateLoader,
           useFactory: rootLoaderFactory,
-          deps: [HttpClient],
-        },
+          deps: [HttpClient]
+        }
       })
-    ),
-  ],
+    )
+  ]
 };
