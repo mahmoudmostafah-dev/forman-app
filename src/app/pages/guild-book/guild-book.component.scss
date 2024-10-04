@@ -1,0 +1,117 @@
+.guild-book {
+  padding: 215px 0;
+  background-color: #0C0C0C;
+  border-radius: 56px;
+}
+
+.content {
+  max-width: 787px;
+}
+
+.text {
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+
+.text div:nth-of-type(1) {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: -0.04em;
+}
+
+.text div:nth-of-type(2) {
+  font-family: "Poppins", sans-serif;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 100px;
+  letter-spacing: -0.04em;
+}
+
+.text div:nth-of-type(2) svg:nth-of-type(1) {
+  top: -21px;
+  left: -13px;
+}
+
+.text div:nth-of-type(2) svg:nth-of-type(2) {
+  display: none;
+}
+
+.text div:nth-of-type(2) svg:nth-of-type(3) {
+  top: 87px;
+  left: 195px;
+}
+
+.text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #9E9E9E;
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+  background-color: #FE12AC;
+  width: fit-content;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  gap: 9.14px;
+  font-weight: 700;
+  line-height: 20.11px;
+  padding: 14.5px 24px;
+}
+
+.btn:focus {
+  background-color: #FE12AC;
+  color: #FFFFFF;
+}
+
+@media (max-width: 991px) {
+  .guild-book {
+    border-radius: 2rem;
+  }
+
+  .text div:nth-of-type(2) svg:nth-of-type(1) {
+    left: 85px;
+  }
+
+  .text div:nth-of-type(2) svg:nth-of-type(3) {
+    left: 293px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text div:nth-of-type(1) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .text div:nth-of-type(2) {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .text div:nth-of-type(2) svg:nth-of-type(2) {
+    display: block;
+    top: -13px;
+    left: 24px;
+  }
+
+  .text div:nth-of-type(2) svg:nth-of-type(1) {
+    display: none;
+  }
+
+  .text div:nth-of-type(2) svg:nth-of-type(3) {
+    width: 22.04px;
+    height: 14.61px;
+    top: 47px;
+    left: 141px;
+  }
+
+  .text p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
