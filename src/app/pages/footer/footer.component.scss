@@ -1,0 +1,127 @@
+footer {
+  background-color: #0C0C0C;
+  padding-top: 110px;
+  padding-bottom: 2rem;
+  border-radius: 56px;
+}
+
+.footer-head {
+  margin-bottom: 3rem;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: #FE12AC;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.73px;
+  padding: 8px 16px;
+}
+
+footer .contact {
+  width: 484.14px;
+}
+
+footer .contact .mail div {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+  max-width: 388px;
+  color: #FFFFFF;
+}
+
+footer .contact .mail form input[type='email'] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #858585;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+footer .contact .mail form input[type='email']::placeholder {
+  color: #9E9E9E;
+}
+
+footer .contact .mail form .btn {
+  padding: 14.5px 24px;
+  gap: 9.14px;
+  background-color: #FE12AC;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.11px;
+  color: #FFFFFF;
+}
+
+footer .container > img {
+  border-bottom: 1px solid #858585;
+  padding-bottom: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+footer .copyright .text {
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 25.6px;
+  color: #FFFFFF;
+}
+
+footer .copyright .text:first-of-type {
+  font-weight: 400;
+}
+
+footer .social {
+  gap: 40px;
+}
+
+footer .copyright .text:last-of-type {
+  font-weight: 200;
+}
+
+footer .copyright .text:last-of-type span {
+  border-bottom: 1px solid #FFFFFF;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  footer {
+    border-radius: 2rem;
+  }
+
+  .footer-head {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .links a {
+    font-size: 24px;
+  }
+
+  footer .contact {
+    width: auto;
+  }
+
+  footer .contact .mail div {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 424px) {
+  footer .contact .mail form input[type='email'] {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 384px) {
+  .download a:first-child {
+    margin-bottom: 10px;
+  }
+}
