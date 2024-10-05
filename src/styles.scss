@@ -4,9 +4,43 @@
 @import 'bootstrap/scss/bootstrap';
 @import '../public/assets/styles/theme-bootstrap.scss';
 
+/* Importing Poppins font */
+@font-face {
+    font-family: "Poppins-Black";
+    src: url('../public/assets/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Poppins-BlackItalic";
+    src: url('../public/assets/fonts/Poppins/Poppins-BlackItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Poppins-ExtraBoldItalic";
+    src: url('../public/assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url('../public/assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url('../public/assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url('../public/assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+}
 
+/* Importing Inter font */
+@font-face {
+    font-family: "Inter";
+    src: url('../public/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+}
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
